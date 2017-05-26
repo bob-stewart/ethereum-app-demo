@@ -49,15 +49,13 @@ class App extends Component {
   render() {
     var styles = {
       wrapper: {
-        background: '#fff',
-        color: '#14171a',
-        margin: '80px auto',
+        background: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.4) 70%, rgba(0, 0, 0, 0.4) 100%)',
+        color: 'white',
+        margin: '60px auto auto 60px',
         padding: '30px 40px',
-        borderRadius: 5,
         fontSize: 14,
         lineHeight: '18px',
-        width: 560,
-        boxShadow: '5px 5px 5px rgba(0,0,0,0.8)'
+        width: 560
       },
       question: {
         clear: 'both',
@@ -65,13 +63,13 @@ class App extends Component {
         lineHeight: '32px',
         fontWeight: 300,
         letterSpacing: '.01em',
-        margin: '10px 0'
+        margin: '20px 0'
       }
     };
     return (
       <div style={styles.wrapper}>
         <Account />
-        <p style={styles.question}>Who is your favorite legend?</p>
+        <p style={styles.question}>Who do you think will be our next Commander in Cream?</p>
         { this.state.results.length
           ? <Results results={this.state.results} refresh={()=>{this.refreshCounts()}}/>
           : <Poll candidates={candidates} vote={(candidate) => this.castVote(candidate)}/>

@@ -26,7 +26,7 @@ export default class Results extends Component {
         },
         progress: {
           borderRadius: 5,
-          background: '#E1E8ED',
+          background: '#ff9311',
           position: 'absolute',
           top: 0,
           bottom: 0,

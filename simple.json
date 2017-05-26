@@ -1,0 +1,45 @@
+[
+  {
+    "title": "President",
+    "choices": [
+      {"name": "Mary", "votes": 10},
+      {"name": "Maria", "votes": 10},
+      {"name": "Maryam", "votes": 10}
+    ]
+  },
+  {
+    "title": "Vice President",
+    "choices": [
+      {"name": "John", "votes": 10},
+      {"name": "Juan", "votes": 10},
+      {"name": "Abdullah", "votes": 10}
+    ]
+  }
+]
+
+[
+  ["President", "Vice President"],
+  [
+    ["Mary", "Maria", "Maryam"],
+    ["John", "Juan", "Abdullah"]
+  ]
+]
+
+["President", "Vice President"]
+
+addCandidate('office')
+
+addChoice('office', 'candidate')
+
+castVote('office', 'candidate')
+
+{
+  "President": {
+    "Mary": 10,
+    "Maria": 10
+  },
+  "Vice President": {
+    "John": 10,
+    "Juan": 10
+  }
+}

@@ -13,15 +13,16 @@ export default class Button extends Component {
   render() {
     var { action, text } = this.props;
     var styles = {
-      backgroundColor: this.state.hover?'#e1e8ed':'#f5f8fA',
-      backgroundImage: this.state.hover?'linear-gradient(0rad,#e1e8ed,#fff)':'linear-gradient(0rad,#f5f8fA,#fff)',
-      border: `1px solid ${this.state.hover?'#E1E1EA':'#e1e8ed'}`,
-      borderRadius: '.25em',
+      backgroundColor: '#ff9311',
+      color: 'white',
+      border: `1px solid ${this.state.hover?'#E1E1EA':'black'}`,
+      borderRadius: '.5em',
       fontWeight: 700,
       marginTop: '.5em',
       padding: '.5em 1em',
-      fontSize: 14,
-      cursor: 'pointer'
+      fontSize: 16,
+      cursor: 'pointer',
+      outline: 'none'
     }
     return (
       <button

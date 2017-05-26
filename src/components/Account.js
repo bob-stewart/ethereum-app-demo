@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import avatar from '../avatar.png';
+import avatar from '../avatar.jpg';
 
 export default class Account extends Component {
   constructor(props) {
@@ -15,7 +15,7 @@ export default class Account extends Component {
     var styles = {
       display: 'block',
       textDecoration: 'none',
-      color: this.state.hover?'#2FC2EF':'#14171a',
+      color: this.state.hover?'#ff9311':'white',
       avatar: {
         width: 48,
         height: 48,
@@ -33,7 +33,8 @@ export default class Account extends Component {
       subtitle: {
         fontSize: 14,
         fontWeight: 'normal',
-        color: '#657786',
+        color: 'white',
+        opacity: 0.4,
         margin: '6px 0'
       }
     }
@@ -44,8 +45,8 @@ export default class Account extends Component {
         onMouseLeave={()=>this.toggleHover()}
       >
         <img style={styles.avatar} src={avatar} alt='Avatar' />
-        <h1 style={styles.title}>Blockchain FTW</h1>
-        <h2 style={styles.subtitle}>@BlockchainFTW</h2>
+        <h1 style={styles.title}>Votem Polls</h1>
+        <h2 style={styles.subtitle}>@VotemPolls</h2>
       </a>
     );
   }
