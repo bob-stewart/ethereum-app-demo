@@ -34,7 +34,7 @@ export default class Results extends Component {
         }
       },
       links: {
-        color: '#8899A6',
+        color: 'white',
         textDecoration: 'none',
         cursor: 'pointer'
       }
@@ -49,7 +49,7 @@ export default class Results extends Component {
     return (
       <ul style={styles.list}>
         {items}
-        <p style={{color: '#8899A6'}}>
+        <p style={{color: 'white', opacity: 0.4}}>
           {totalVotes} votes • <a style={styles.links} onClick={()=>{this.refresh()}}>Refresh Results</a> • <a style={styles.links} href=''>Vote Again</a>
         </p>
       </ul>
